@@ -1,0 +1,186 @@
+body{
+  background-image: url(kepek/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center top;
+  font-family: 'Courgette', cursive;
+  display: grid;
+  grid-template-areas: 
+  "fejlec"
+  "kontent"
+  "lablec";
+  grid-template-rows: max-content 1fr max-content;
+  min-height: 100vh;
+  font-size: 30pt;
+  color: white;
+}
+*,*::before,*::after{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/*--felosztás--*/
+header{
+grid-area: fejlec;
+}
+main{
+  grid-area: kontent;
+}
+footer{
+  grid-area: lablec;
+}
+/*fooldal*/
+/*--header--*/
+#menuszalag a{
+  text-decoration: none;
+  color: white;
+}
+#menuszalag div{
+  display: inline-block;
+  width: auto;
+  margin-right: 25px;
+  margin-top: 20px;
+}
+#lenyilo_menu a{
+  text-decoration: none;
+  color: white;
+}
+#lenyilo_menu div{
+  width: auto;
+  margin-right: 25px;
+  margin-top: 20px;
+}
+header{
+  font-family: 'Dancing Script', cursive;
+  padding: 12px;
+  position: relative;
+  text-align: right;
+}
+#menuszalag{
+display: inline-block;
+text-align: right;
+}
+#menuszalag.nem_latszodik{
+  display: none;
+}
+#menu_kep{
+  display: none;
+}
+#menu_kep.latszodik{
+  display: inline-block;
+}
+#lenyilo_menu{
+  display: none;
+}
+#lenyilo_menu.latszodik{
+display: block;
+border-radius: 10px;
+background-color: rgba(0,0,0,0.7);
+padding: 25px;
+position: absolute;
+right: 10px;
+top: 4rem;
+}
+/*--main--*/
+
+#fooldal_cim{
+  padding-top: 38vh;
+  padding-right: 22vw;
+  font-size: 40pt;
+  font-style: italic;
+  text-align: right;
+}
+.fooldal_nev{
+  margin-top: 2vh;
+  margin-right: 15vw;
+  font-size: 56pt;
+  text-align: right;
+}
+/*--footer--*/
+footer{
+  text-align: right;
+  background-color: rgba(255,255,255,0.4);
+}
+.ikon{
+  height: 56px;
+  display: inline-block;
+  margin-right: 35px;
+  margin-top: 10px;
+}
+#szelso_ikon{
+  margin-right: 50px;
+}
+/*--rolam--*/
+#rolam{
+  padding-top: 10%;
+  padding-left: 15%;
+  padding-right: 5%;
+  padding-bottom: 5%;
+}
+#bemutatkozas{
+  background-color: rgba(0,0,0,0.75);
+  max-width: 76%;
+  min-width: 20%;
+  padding: 15px;
+  text-align: justify;
+  font-family: 'Courgette', cursive;
+  font-size: 14pt;
+  line-height: 1.4;
+  margin-top: 15px;
+}
+#rolam div{
+  border-radius: 30px;
+  display: inline-block;
+  flex-grow: 1;
+}
+#rolam img{
+  min-width: 180px;
+  max-width: 18vw;
+  border-radius: 30px;
+   vertical-align: bottom;
+}
+/*--galeria--*/
+#galeria{
+  margin: 9% 5% 1% 5%;
+  padding: 15px;
+  background-color: rgba(0,0,0,0.7);
+  border-radius: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30%,1fr));
+  grid-gap: 25px;
+  text-align: center;
+}
+.kartya{
+  display: block;
+  margin: 0;
+  text-align: center;
+}
+#galeria img{
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  border-radius: 25px;
+  margin-right: auto;
+  margin-left: auto;
+  transition: transform .2s;
+
+}
+#galeria img:hover{
+  -ms-transform: scale(1.3);
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3); 
+}
+#galeria video{
+  max-width: 100%;
+  display: block;
+  border-radius: 25px;
+  margin-right: auto;
+  margin-left: auto;
+
+}
+#galeria video:hover{
+-ms-transform: scale(1.3);
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3); 
+}

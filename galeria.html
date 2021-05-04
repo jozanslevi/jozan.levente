@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Galéria</title>
+<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<div id="menuszalag" class="ikon ">
+			<div>
+				<a href="index.html">Főoldal</a>
+			</div>
+			<div>
+				<a href="rolam.html">Rólam</a>
+			</div>
+			<div>
+				<a href="galeria.html">Galéria</a>
+			</div>
+			<div>
+				<a href="oldalterv.html">Oldalterv</a>
+			</div>
+		</div>
+		<img src="css/kepek/ikon/menu.png" alt="menu" id="menu_kep" class="" width="56" onclick="menu_nyito()">
+		<div id="lenyilo_menu" class="">
+			<div>
+				<a href="index.html">Főoldal</a>
+			</div>
+			<div>
+				<a href="rolam.html">Rólam</a>
+			</div>
+			<div>
+				<a href="galeria.html">Galéria</a>
+			</div>
+			<div>
+				<a href="oldalterv.html">Oldalterv</a>
+			</div>
+		</div>
+	</header>
+	<main id="galeria">
+		<img src="css/kepek/motor/1.jpg" alt="motor1">
+		<img src="css/kepek/motor/2.jpg" alt="motor2">
+		<img src="css/kepek/motor/3.jpg" alt="motor3">
+		<video controls autoplay muted loop>
+  			<source src="css/kepek/motor/video.mp4" type="video/mp4">
+		</video>
+		<img src="css/kepek/motor/4.jpg" alt="motor4">
+		<img src="css/kepek/motor/5.jpg" alt="motor5">
+		<img src="css/kepek/motor/6.jpg" alt="motor6">
+		<img src="css/kepek/traktor/1.jpg" alt="gepek1">
+		<video controls autoplay muted loop>
+  			<source src="css/kepek/traktor/best.mp4" type="video/mp4">
+		</video>
+		<img src="css/kepek/traktor/2.jpg" alt="gepek2">
+		<img src="css/kepek/traktor/3.jpg" alt="gepek3">
+		<video controls autoplay muted loop>
+  			<source src="css/kepek/traktor/balahordas.mp4" type="video/mp4">
+		</video>
+		<img src="css/kepek/traktor/4.jpg" alt="gepek4">
+		<video controls autoplay muted loop>
+  			<source src="css/kepek/traktor/permetezes.mp4" type="video/mp4">
+		</video>
+		<img src="css/kepek/traktor/5.jpg" alt="gepek5">
+	</main>
+	<footer>
+		<a href="https://www.youtube.com/channel/UCXe8n28IYE6lZRiC06f8_ng" target="_blank"><img class="ikon" src="css/kepek/ikon/youtube.png" alt="youtube"></a>
+		<a href="https://www.instagram.com/gallery.agri/" target="_blank"><img class="ikon"  src="css/kepek/ikon/instagram.png" alt="instagram"></a>
+		<a href="#" target="_blank"><img class="ikon" id="szelso_ikon" src="css/kepek/ikon/facebook.png" alt="facebook"></a>
+	</footer>
+	<script>
+			var szelesseg=window.innerWidth;
+			if (szelesseg<670) {
+				document.getElementById("menuszalag").classList.toggle("nem_latszodik");
+				document.getElementById("menu_kep").classList.toggle("latszodik");}
+	</script>
+	<script type="text/javascript">
+			function menu_nyito(){
+				var element=document.getElementById("lenyilo_menu");
+				element.classList.toggle("latszodik");
+			}
+	</script>
+</body>
+</html>

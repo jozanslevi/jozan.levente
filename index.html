@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Józan Sándor Levente</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+
+
+<!--font-family: 'Dancing Script', cursive;-->
+<!--font-family: 'Courgette', cursive;-->
+</head>
+<body>
+	
+		<header>
+		<div id="menuszalag" class="ikon ">
+			<div>
+				<a href="index.html">Főoldal</a>
+			</div>
+			<div>
+				<a href="rolam.html">Rólam</a>
+			</div>
+			<div>
+				<a href="galeria.html">Galéria</a>
+			</div>
+			<div>
+				<a href="oldalterv.html">Oldalterv</a>
+			</div>
+		</div>
+		<img src="css/kepek/ikon/menu.png" id="menu_kep" class="" width="56" onclick="menu_nyito()">
+		<div id="lenyilo_menu" class="">
+			<div>
+				<a href="index.html">Főoldal</a>
+			</div>
+			<div>
+				<a href="rolam.html">Rólam</a>
+			</div>
+			<div>
+				<a href="galeria.html">Galéria</a>
+			</div>
+			<div>
+				<a href="oldalterv.html">Oldalterv</a>
+			</div>
+		</div>
+	</header>
+	<main>
+		<div id="fooldal_cim">Portfolió</div>
+		<div class="fooldal_nev">Józan Sándor Levente</div>
+	</main>
+	<footer>
+		<a href="https://www.youtube.com/channel/UCXe8n28IYE6lZRiC06f8_ng" target="_blank"><img class="ikon" src="css/kepek/ikon/youtube.png" alt="youtube"></a>
+		<a href="https://www.instagram.com/gallery.agri/" target="_blank"><img class="ikon"  src="css/kepek/ikon/instagram.png" alt="intagram"></a>
+		<a href="#"  target="_blank"><img class="ikon" id="szelso_ikon" src="css/kepek/ikon/facebook.png" alt="facebook"></a>
+	</footer>
+		<script>
+			var szelesseg=window.innerWidth;
+			if (szelesseg<670) {
+				document.getElementById("menuszalag").classList.toggle("nem_latszodik");
+				document.getElementById("menu_kep").classList.toggle("latszodik");}
+	</script>
+	<script type="text/javascript">
+			function menu_nyito(){
+				var element=document.getElementById("lenyilo_menu");
+				element.classList.toggle("latszodik");
+			}
+	</script>
+</body>
+</html>
