@@ -32,19 +32,22 @@ footer{
 }
 /*fooldal*/
 /*--header--*/
-#menuszalag a{
+header a{
   text-decoration: none;
   color: white;
+}
+#monogram{
+  display: inline-block;
+  position: fixed;
+  top: 28px;
+  left: 40px;
+  font-size: 42pt;
 }
 #menuszalag div{
   display: inline-block;
   width: auto;
   margin-right: 25px;
   margin-top: 20px;
-}
-#lenyilo_menu a{
-  text-decoration: none;
-  color: white;
 }
 #lenyilo_menu div{
   width: auto;
