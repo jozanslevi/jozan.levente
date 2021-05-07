@@ -15,38 +15,68 @@
 <body>
 	
 		<header>
-		<div id="monogram"><a href="index.html">J. S. L.</a></div>
-		<div id="menuszalag" class="ikon ">
-			<div>
-				<a href="index.html">Főoldal</a>
+			<div id="monogram"><a href="index.html">J. S. L.</a></div>
+			<div id="menuszalag" class="ikon ">
+				<div>
+					<a href="index.html">Főoldal</a>
+				</div>
+				<div>
+					<a href="rolam.html">Rólam</a>
+				</div>
+				<div>
+					<a href="galeria.html">Galéria</a>
+				</div>
+				<div>
+					<a href="oldalterv.html">Oldalterv</a>
+				</div>
 			</div>
-			<div>
-				<a href="rolam.html">Rólam</a>
+			<img src="css/kepek/ikon/menu.png" id="menu_kep" class="" width="56" onclick="menu_nyito()">
+			<div id="lenyilo_menu" class="">
+				<div>
+					<a href="index.html">Főoldal</a>
+				</div>
+				<div>
+					<a href="rolam.html">Rólam</a>
+				</div>
+				<div>
+					<a href="galeria.html">Galéria</a>
+				</div>
+				<div>
+					<a href="oldalterv.html">Oldalterv</a>
+				</div>
 			</div>
-			<div>
-				<a href="galeria.html">Galéria</a>
-			</div>
-			<div>
-				<a href="oldalterv.html">Oldalterv</a>
-			</div>
-		</div>
-		<img src="css/kepek/ikon/menu.png" id="menu_kep" class="" width="56" onclick="menu_nyito()">
-		<div id="lenyilo_menu" class="">
-			<div>
-				<a href="index.html">Főoldal</a>
-			</div>
-			<div>
-				<a href="rolam.html">Rólam</a>
-			</div>
-			<div>
-				<a href="galeria.html">Galéria</a>
-			</div>
-			<div>
-				<a href="oldalterv.html">Oldalterv</a>
-			</div>
-		</div>
 	</header>
 	<main>
+		<div  id="oldalterv">
+			<div>
+			<img src="css/kepek/background.jpg" alt="background" ></img>
+			</div>
+			<div class="szovegbox">
+				Az oldal tervezését a megfelelő háttérkép kiválasztásával kezdtem. Mindenképp fényképben gondolkoztam, ami meghatározza a téma arculatát. A képnek a felső részén kialakítottam egy átmenetes sötétedést, ezzel megoldva a menüsáv láthatóságát. A lábléc funkcióját a közösségi média gombjainak szántam. A színválasztásnál ügyeltem arra, hogy ne térjek el a fekete-fehér világtól és végül a világos háttéren fekete ikonok lettek a befutók. A fejléc tervezésénél fontos szempont volt, hogy mobil eszközökről se csússzon össze a menü, ezért egy bizonyos szélesség alatt lenyíló menüvé alakul át.
+			</div>
+			<div class="szovegbox">
+				A főoldalnak egyetlen szerepet szántam, mégpedig azt, hogy az oldal megnyitásakor egy egyszerű, látványos főoldal köszöntse a felhasználót, aki innen indulva tudja felfedezni a tartalmakat.
+			</div>
+			<div>
+				<iframe src="oldal.html"></iframe>
+			</div>
+			<div>
+				<iframe src="rolam.html"></iframe>
+			</div>
+			<div class="szovegbox">
+				A következő elem a bemutatkozás. A rövid személyes bemutatkozás mellett csak egy portrét szerettem volna megjeleníteni. A szöveg olvashatósága érdekében annak hátterét elsötétítettem, így megoldva ezt a problémát, amit az oldalon később is alkalmaztam.
+			</div>
+			<div class="szovegbox">
+				A 'valódi' tartalom a galéria fül alatt található. A grides felosztást igyekeztem úgy megoldani, hogy a fényképek a lehető legjobban töltsék ki a számukra fennálló helyet, bármilyen képarány mellett. A lap fő feature-e, hogy a képek egér lebegtetésre megnőnek, ezzel interaktívabbá téve a galériát.
+			</div>
+			<div>
+				<iframe src="galeria.html"></iframe>
+			</div>
+		</div>
+		
+		<div id="lezaras" class="szovegbox">
+			Az oldal létrehozása közben a legfőbb problémát az jelentette, hogy a tartalom megfelelően jelenjen meg a képernyőn. Rengetegszer futottam bele abba, hogy a szövegek, képek, videók kifutottak a nekik szánt helyről. Másik nehézség volt a két script megírása, hiszen ez nem alkotta az anyag részét, azonban hosszas keresés után ezt is sikerült kipipálni. A kapott tananyagon kívül forrásként a w3schools oldalát és az internetes fórumokat használtam fel. 
+		</div>
 	</main>
 	<footer>
 		<a href="https://www.youtube.com/channel/UCXe8n28IYE6lZRiC06f8_ng" target="_blank"><img class="ikon" src="css/kepek/ikon/youtube.png" alt="youtube"></a>
